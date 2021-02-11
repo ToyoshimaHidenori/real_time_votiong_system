@@ -1,15 +1,15 @@
-# real_time_votiong_system
+# real_time_voting_system
 
 
 ## 環境構築
 
 
 ```shell script
-git clone https://github.com/ToyoshimaHidenori/real_time_votiong_system.git
+git clone https://github.com/ToyoshimaHidenori/real_time_voting_system.git
 ```
 
 ```shell script
-cd ./real_time_votiong_system
+cd ./real_time_voting_system
 ```
 
 Dockerを事前にインストールする必要があります。以下のコマンドでビルドします。
@@ -18,14 +18,12 @@ Dockerを事前にインストールする必要があります。以下のコ�
 docker-compose build
 ```
 
-以下のコマンドで、開発環境上でのシェルが起動します。
+以下のコマンドで、 ~開発環境上でのシェルが~ アプリケーションが起動します。
 ```shell script
 docker-compose run --service-ports --rm app
 ```
-ここで、以下のコマンドを叩くことで、ブラウザから```localhost:7000/```または```localhost:7000/admin/```にアクセスできます。
-```shell script
-node app
-```
+ここで、ブラウザから投票者画面```localhost:7000/```または管理者画面```localhost:7000/admin/```にアクセスできます。
+
 
 ## 起動方法
 直下のディレクトリで以下のコマンドを実行
